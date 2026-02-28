@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04117B932F52ED18000CDAED /* LifeQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117B922F52ED18000CDAED /* LifeQuestApp.swift */; };
+		04117B952F52ED18000CDAED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117B942F52ED18000CDAED /* ContentView.swift */; };
+		04117B972F52ED1A000CDAED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04117B962F52ED1A000CDAED /* Assets.xcassets */; };
+		04117B9A2F52ED1A000CDAED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04117B992F52ED1A000CDAED /* Preview Assets.xcassets */; };
+		04117BA42F52ED1A000CDAED /* LifeQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117BA32F52ED1A000CDAED /* LifeQuestTests.swift */; };
+		04117BAE2F52ED1A000CDAED /* LifeQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117BAD2F52ED1A000CDAED /* LifeQuestUITests.swift */; };
+		04117BB02F52ED1A000CDAED /* LifeQuestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117BAF2F52ED1A000CDAED /* LifeQuestUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04117BA02F52ED1A000CDAED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04117B872F52ED18000CDAED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04117B8E2F52ED18000CDAED;
+			remoteInfo = LifeQuest;
+		};
+		04117BAA2F52ED1A000CDAED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04117B872F52ED18000CDAED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04117B8E2F52ED18000CDAED;
+			remoteInfo = LifeQuest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04117B8F2F52ED18000CDAED /* LifeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04117B922F52ED18000CDAED /* LifeQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeQuestApp.swift; sourceTree = "<group>"; };
+		04117B942F52ED18000CDAED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04117B962F52ED1A000CDAED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04117B992F52ED1A000CDAED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04117B9F2F52ED1A000CDAED /* LifeQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04117BA32F52ED1A000CDAED /* LifeQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeQuestTests.swift; sourceTree = "<group>"; };
+		04117BA92F52ED1A000CDAED /* LifeQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04117BAD2F52ED1A000CDAED /* LifeQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeQuestUITests.swift; sourceTree = "<group>"; };
+		04117BAF2F52ED1A000CDAED /* LifeQuestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeQuestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04117B8C2F52ED18000CDAED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04117B9C2F52ED1A000CDAED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04117BA62F52ED1A000CDAED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04117B862F52ED18000CDAED = {
+			isa = PBXGroup;
+			children = (
+				04117B912F52ED18000CDAED /* LifeQuest */,
+				04117BA22F52ED1A000CDAED /* LifeQuestTests */,
+				04117BAC2F52ED1A000CDAED /* LifeQuestUITests */,
+				04117B902F52ED18000CDAED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04117B902F52ED18000CDAED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04117B8F2F52ED18000CDAED /* LifeQuest.app */,
+				04117B9F2F52ED1A000CDAED /* LifeQuestTests.xctest */,
+				04117BA92F52ED1A000CDAED /* LifeQuestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04117B912F52ED18000CDAED /* LifeQuest */ = {
+			isa = PBXGroup;
+			children = (
+				04117B922F52ED18000CDAED /* LifeQuestApp.swift */,
+				04117B942F52ED18000CDAED /* ContentView.swift */,
+				04117B962F52ED1A000CDAED /* Assets.xcassets */,
+				04117B982F52ED1A000CDAED /* Preview Content */,
+			);
+			path = LifeQuest;
+			sourceTree = "<group>";
+		};
+		04117B982F52ED1A000CDAED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04117B992F52ED1A000CDAED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04117BA22F52ED1A000CDAED /* LifeQuestTests */ = {
+			isa = PBXGroup;
+			children = (
+				04117BA32F52ED1A000CDAED /* LifeQuestTests.swift */,
+			);
+			path = LifeQuestTests;
+			sourceTree = "<group>";
+		};
+		04117BAC2F52ED1A000CDAED /* LifeQuestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04117BAD2F52ED1A000CDAED /* LifeQuestUITests.swift */,
+				04117BAF2F52ED1A000CDAED /* LifeQuestUITestsLaunchTests.swift */,
+			);
+			path = LifeQuestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04117B8E2F52ED18000CDAED /* LifeQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04117BB32F52ED1A000CDAED /* Build configuration list for PBXNativeTarget "LifeQuest" */;
+			buildPhases = (
+				04117B8B2F52ED18000CDAED /* Sources */,
+				04117B8C2F52ED18000CDAED /* Frameworks */,
+				04117B8D2F52ED18000CDAED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeQuest;
+			productName = LifeQuest;
+			productReference = 04117B8F2F52ED18000CDAED /* LifeQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04117B9E2F52ED1A000CDAED /* LifeQuestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04117BB62F52ED1A000CDAED /* Build configuration list for PBXNativeTarget "LifeQuestTests" */;
+			buildPhases = (
+				04117B9B2F52ED1A000CDAED /* Sources */,
+				04117B9C2F52ED1A000CDAED /* Frameworks */,
+				04117B9D2F52ED1A000CDAED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04117BA12F52ED1A000CDAED /* PBXTargetDependency */,
+			);
+			name = LifeQuestTests;
+			productName = LifeQuestTests;
+			productReference = 04117B9F2F52ED1A000CDAED /* LifeQuestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04117BA82F52ED1A000CDAED /* LifeQuestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04117BB92F52ED1A000CDAED /* Build configuration list for PBXNativeTarget "LifeQuestUITests" */;
+			buildPhases = (
+				04117BA52F52ED1A000CDAED /* Sources */,
+				04117BA62F52ED1A000CDAED /* Frameworks */,
+				04117BA72F52ED1A000CDAED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04117BAB2F52ED1A000CDAED /* PBXTargetDependency */,
+			);
+			name = LifeQuestUITests;
+			productName = LifeQuestUITests;
+			productReference = 04117BA92F52ED1A000CDAED /* LifeQuestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04117B872F52ED18000CDAED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					04117B8E2F52ED18000CDAED = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					04117B9E2F52ED1A000CDAED = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 04117B8E2F52ED18000CDAED;
+					};
+					04117BA82F52ED1A000CDAED = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 04117B8E2F52ED18000CDAED;
+					};
+				};
+			};
+			buildConfigurationList = 04117B8A2F52ED18000CDAED /* Build configuration list for PBXProject "LifeQuest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04117B862F52ED18000CDAED;
+			productRefGroup = 04117B902F52ED18000CDAED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04117B8E2F52ED18000CDAED /* LifeQuest */,
+				04117B9E2F52ED1A000CDAED /* LifeQuestTests */,
+				04117BA82F52ED1A000CDAED /* LifeQuestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04117B8D2F52ED18000CDAED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04117B9A2F52ED1A000CDAED /* Preview Assets.xcassets in Resources */,
+				04117B972F52ED1A000CDAED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04117B9D2F52ED1A000CDAED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04117BA72F52ED1A000CDAED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04117B8B2F52ED18000CDAED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04117B952F52ED18000CDAED /* ContentView.swift in Sources */,
+				04117B932F52ED18000CDAED /* LifeQuestApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04117B9B2F52ED1A000CDAED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04117BA42F52ED1A000CDAED /* LifeQuestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04117BA52F52ED1A000CDAED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04117BAE2F52ED1A000CDAED /* LifeQuestUITests.swift in Sources */,
+				04117BB02F52ED1A000CDAED /* LifeQuestUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04117BA12F52ED1A000CDAED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04117B8E2F52ED18000CDAED /* LifeQuest */;
+			targetProxy = 04117BA02F52ED1A000CDAED /* PBXContainerItemProxy */;
+		};
+		04117BAB2F52ED1A000CDAED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04117B8E2F52ED18000CDAED /* LifeQuest */;
+			targetProxy = 04117BAA2F52ED1A000CDAED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04117BB12F52ED1A000CDAED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04117BB22F52ED1A000CDAED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04117BB42F52ED1A000CDAED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LifeQuest/Preview Content\"";
+				DEVELOPMENT_TEAM = 86743D7YP9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myFirm.LifeQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04117BB52F52ED1A000CDAED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LifeQuest/Preview Content\"";
+				DEVELOPMENT_TEAM = 86743D7YP9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myFirm.LifeQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04117BB72F52ED1A000CDAED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 86743D7YP9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myFirm.LifeQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeQuest.app/LifeQuest";
+			};
+			name = Debug;
+		};
+		04117BB82F52ED1A000CDAED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 86743D7YP9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myFirm.LifeQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeQuest.app/LifeQuest";
+			};
+			name = Release;
+		};
+		04117BBA2F52ED1A000CDAED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 86743D7YP9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myFirm.LifeQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LifeQuest;
+			};
+			name = Debug;
+		};
+		04117BBB2F52ED1A000CDAED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 86743D7YP9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myFirm.LifeQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LifeQuest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04117B8A2F52ED18000CDAED /* Build configuration list for PBXProject "LifeQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04117BB12F52ED1A000CDAED /* Debug */,
+				04117BB22F52ED1A000CDAED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04117BB32F52ED1A000CDAED /* Build configuration list for PBXNativeTarget "LifeQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04117BB42F52ED1A000CDAED /* Debug */,
+				04117BB52F52ED1A000CDAED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04117BB62F52ED1A000CDAED /* Build configuration list for PBXNativeTarget "LifeQuestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04117BB72F52ED1A000CDAED /* Debug */,
+				04117BB82F52ED1A000CDAED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04117BB92F52ED1A000CDAED /* Build configuration list for PBXNativeTarget "LifeQuestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04117BBA2F52ED1A000CDAED /* Debug */,
+				04117BBB2F52ED1A000CDAED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04117B872F52ED18000CDAED /* Project object */;
+}
