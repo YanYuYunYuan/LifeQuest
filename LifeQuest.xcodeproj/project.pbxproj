@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0403390A2F52F5640045FA35 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339092F52F5640045FA35 /* MainTabView.swift */; };
 		04117B932F52ED18000CDAED /* LifeQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117B922F52ED18000CDAED /* LifeQuestApp.swift */; };
 		04117B952F52ED18000CDAED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117B942F52ED18000CDAED /* ContentView.swift */; };
 		04117B972F52ED1A000CDAED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04117B962F52ED1A000CDAED /* Assets.xcassets */; };
@@ -14,6 +15,11 @@
 		04117BA42F52ED1A000CDAED /* LifeQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117BA32F52ED1A000CDAED /* LifeQuestTests.swift */; };
 		04117BAE2F52ED1A000CDAED /* LifeQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117BAD2F52ED1A000CDAED /* LifeQuestUITests.swift */; };
 		04117BB02F52ED1A000CDAED /* LifeQuestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117BAF2F52ED1A000CDAED /* LifeQuestUITestsLaunchTests.swift */; };
+		04117BBD2F52F0EE000CDAED /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117BBC2F52F0EE000CDAED /* HomeView.swift */; };
+		04117BBF2F52F229000CDAED /* QuestLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117BBE2F52F229000CDAED /* QuestLogView.swift */; };
+		04117BC12F52F46E000CDAED /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117BC02F52F46E000CDAED /* ProfileView.swift */; };
+		04117BC32F52F4AA000CDAED /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117BC22F52F4AA000CDAED /* ShopView.swift */; };
+		04117BC52F52F4CC000CDAED /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117BC42F52F4CC000CDAED /* SocialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040339092F52F5640045FA35 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = SOURCE_ROOT; };
 		04117B8F2F52ED18000CDAED /* LifeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04117B922F52ED18000CDAED /* LifeQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeQuestApp.swift; sourceTree = "<group>"; };
 		04117B942F52ED18000CDAED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +51,11 @@
 		04117BA92F52ED1A000CDAED /* LifeQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04117BAD2F52ED1A000CDAED /* LifeQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeQuestUITests.swift; sourceTree = "<group>"; };
 		04117BAF2F52ED1A000CDAED /* LifeQuestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeQuestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04117BBC2F52F0EE000CDAED /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		04117BBE2F52F229000CDAED /* QuestLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestLogView.swift; sourceTree = "<group>"; };
+		04117BC02F52F46E000CDAED /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		04117BC22F52F4AA000CDAED /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		04117BC42F52F4CC000CDAED /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,12 @@
 			children = (
 				04117B922F52ED18000CDAED /* LifeQuestApp.swift */,
 				04117B942F52ED18000CDAED /* ContentView.swift */,
+				04117BBC2F52F0EE000CDAED /* HomeView.swift */,
+				04117BBE2F52F229000CDAED /* QuestLogView.swift */,
+				04117BC02F52F46E000CDAED /* ProfileView.swift */,
+				04117BC22F52F4AA000CDAED /* ShopView.swift */,
+				04117BC42F52F4CC000CDAED /* SocialView.swift */,
+				040339092F52F5640045FA35 /* MainTabView.swift */,
 				04117B962F52ED1A000CDAED /* Assets.xcassets */,
 				04117B982F52ED1A000CDAED /* Preview Content */,
 			);
@@ -257,8 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04117BC32F52F4AA000CDAED /* ShopView.swift in Sources */,
+				04117BBF2F52F229000CDAED /* QuestLogView.swift in Sources */,
+				04117BBD2F52F0EE000CDAED /* HomeView.swift in Sources */,
+				0403390A2F52F5640045FA35 /* MainTabView.swift in Sources */,
+				04117BC12F52F46E000CDAED /* ProfileView.swift in Sources */,
 				04117B952F52ED18000CDAED /* ContentView.swift in Sources */,
 				04117B932F52ED18000CDAED /* LifeQuestApp.swift in Sources */,
+				04117BC52F52F4CC000CDAED /* SocialView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
