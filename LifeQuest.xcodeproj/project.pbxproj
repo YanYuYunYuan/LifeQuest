@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0403390A2F52F5640045FA35 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339092F52F5640045FA35 /* MainTabView.swift */; };
+		0403390E2F5415920045FA35 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403390D2F5415920045FA35 /* User.swift */; };
+		040339102F5415AB0045FA35 /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403390F2F5415AB0045FA35 /* Quest.swift */; };
+		040339122F5415C80045FA35 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339112F5415C80045FA35 /* GameViewModel.swift */; };
+		040339142F54178C0045FA35 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339132F54178C0045FA35 /* StatusBarView.swift */; };
+		040339162F5418720045FA35 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339152F5418720045FA35 /* BannerView.swift */; };
+		040339182F5418C90045FA35 /* DailyQuestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339172F5418C90045FA35 /* DailyQuestListView.swift */; };
+		0403391A2F5419630045FA35 /* MainQuestCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339192F5419630045FA35 /* MainQuestCardView.swift */; };
+		0403391C2F5419A10045FA35 /* BottomActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403391B2F5419A10045FA35 /* BottomActionView.swift */; };
 		04117B932F52ED18000CDAED /* LifeQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117B922F52ED18000CDAED /* LifeQuestApp.swift */; };
 		04117B952F52ED18000CDAED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117B942F52ED18000CDAED /* ContentView.swift */; };
 		04117B972F52ED1A000CDAED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04117B962F52ED1A000CDAED /* Assets.xcassets */; };
@@ -41,6 +49,14 @@
 
 /* Begin PBXFileReference section */
 		040339092F52F5640045FA35 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = SOURCE_ROOT; };
+		0403390D2F5415920045FA35 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0403390F2F5415AB0045FA35 /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
+		040339112F5415C80045FA35 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		040339132F54178C0045FA35 /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
+		040339152F5418720045FA35 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		040339172F5418C90045FA35 /* DailyQuestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyQuestListView.swift; sourceTree = "<group>"; };
+		040339192F5419630045FA35 /* MainQuestCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQuestCardView.swift; sourceTree = "<group>"; };
+		0403391B2F5419A10045FA35 /* BottomActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomActionView.swift; sourceTree = "<group>"; };
 		04117B8F2F52ED18000CDAED /* LifeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04117B922F52ED18000CDAED /* LifeQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeQuestApp.swift; sourceTree = "<group>"; };
 		04117B942F52ED18000CDAED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,11 +125,19 @@
 				04117B922F52ED18000CDAED /* LifeQuestApp.swift */,
 				04117B942F52ED18000CDAED /* ContentView.swift */,
 				04117BBC2F52F0EE000CDAED /* HomeView.swift */,
+				040339132F54178C0045FA35 /* StatusBarView.swift */,
+				040339152F5418720045FA35 /* BannerView.swift */,
+				040339172F5418C90045FA35 /* DailyQuestListView.swift */,
+				040339192F5419630045FA35 /* MainQuestCardView.swift */,
+				0403391B2F5419A10045FA35 /* BottomActionView.swift */,
 				04117BBE2F52F229000CDAED /* QuestLogView.swift */,
 				04117BC02F52F46E000CDAED /* ProfileView.swift */,
 				04117BC22F52F4AA000CDAED /* ShopView.swift */,
 				04117BC42F52F4CC000CDAED /* SocialView.swift */,
 				040339092F52F5640045FA35 /* MainTabView.swift */,
+				0403390D2F5415920045FA35 /* User.swift */,
+				0403390F2F5415AB0045FA35 /* Quest.swift */,
+				040339112F5415C80045FA35 /* GameViewModel.swift */,
 				04117B962F52ED1A000CDAED /* Assets.xcassets */,
 				04117B982F52ED1A000CDAED /* Preview Content */,
 			);
@@ -275,14 +299,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0403391A2F5419630045FA35 /* MainQuestCardView.swift in Sources */,
+				040339102F5415AB0045FA35 /* Quest.swift in Sources */,
+				040339182F5418C90045FA35 /* DailyQuestListView.swift in Sources */,
 				04117BC32F52F4AA000CDAED /* ShopView.swift in Sources */,
 				04117BBF2F52F229000CDAED /* QuestLogView.swift in Sources */,
+				040339122F5415C80045FA35 /* GameViewModel.swift in Sources */,
 				04117BBD2F52F0EE000CDAED /* HomeView.swift in Sources */,
 				0403390A2F52F5640045FA35 /* MainTabView.swift in Sources */,
+				040339142F54178C0045FA35 /* StatusBarView.swift in Sources */,
 				04117BC12F52F46E000CDAED /* ProfileView.swift in Sources */,
+				0403390E2F5415920045FA35 /* User.swift in Sources */,
 				04117B952F52ED18000CDAED /* ContentView.swift in Sources */,
 				04117B932F52ED18000CDAED /* LifeQuestApp.swift in Sources */,
+				040339162F5418720045FA35 /* BannerView.swift in Sources */,
 				04117BC52F52F4CC000CDAED /* SocialView.swift in Sources */,
+				0403391C2F5419A10045FA35 /* BottomActionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
