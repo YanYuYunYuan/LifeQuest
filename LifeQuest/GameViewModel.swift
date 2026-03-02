@@ -27,38 +27,57 @@ class GameViewModel: ObservableObject {
         coinReward: 50, expReward: 100, icon: "scalemass.fill"
     )
     
-    // 完成任务
-    func completeQuest(_ quest: Quest) {
-        guard let index = dailyQuests.firstIndex(where: { $0.id == quest.id }),
-              !dailyQuests[index].isCompleted else { return }
+    // 完成任务（通过 ID）
+        func completeQuest(byId id: UUID) -> Bool {
+            // 先在日常任务中查找
+            if let index = dailyQuests.firstIndex(where: { $0.id == id }) {
+                guard !dailyQuests[index].isCompleted else { return false }
+                dailyQuests[index].isCompleted = true
+                user.coins += dailyQuests[index].coinReward
+                user.exp += dailyQuests[index].expReward
+                dailyQuests[index].currentStreak += 1   // 简化处理，实际可判断是否连续
+                checkLevelUp()
+                return true
+            }
+            // 再检查主线任务
+            if mainQuest.id == id {
+                guard !mainQuest.isCompleted else { return false }
+                mainQuest.isCompleted = true
+                user.coins += mainQuest.coinReward
+                user.exp += mainQuest.expReward
+                checkLevelUp()
+                return true
+            }
+            return false
+        }
         
-        // 标记完成
-        dailyQuests[index].isCompleted = true
+        // 兼容原有的 completeQuest(_:) 方法
+        func completeQuest(_ quest: Quest) {
+            _ = completeQuest(byId: quest.id)
+        }
         
-        // 增加金币和经验
-        user.coins += quest.coinReward
-        user.exp += quest.expReward
+        // 更新任务进度（用于主线）
+        func updateQuestProgress(id: UUID, progress: Double) {
+            if let index = dailyQuests.firstIndex(where: { $0.id == id }) {
+                dailyQuests[index].progress = progress
+            } else if mainQuest.id == id {
+                mainQuest.progress = progress
+            }
+        }
         
         // 检查升级
-        checkLevelUp()
-        
-        // 触感反馈
-        let generator = UINotificationFeedbackGenerator()
-        generator.notificationOccurred(.success)
-    }
-    
-    // 检查升级
-    private func checkLevelUp() {
-        while user.exp >= user.expToNextLevel {
-            user.level += 1
-            user.exp -= user.expToNextLevel
-            user.expToNextLevel = Int(Double(user.expToNextLevel) * 1.2)  // 经验递增
-            
-            // 升级奖励（这里简化，实际可弹出奖励选择）
-            user.coins += 50
-            user.gems += 1
+        private func checkLevelUp() {
+            while user.exp >= user.expToNextLevel {
+                user.level += 1
+                user.exp -= user.expToNextLevel
+                user.expToNextLevel = Int(Double(user.expToNextLevel) * 1.2)  // 经验递增
+                
+                // 升级奖励（简化）
+                user.coins += 50
+                user.gems += 1
+            }
         }
-    }
+        
     
     // 每日重置（通常在凌晨调用）
     func resetDailyQuests() {

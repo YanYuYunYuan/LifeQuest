@@ -16,6 +16,7 @@
 		040339182F5418C90045FA35 /* DailyQuestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339172F5418C90045FA35 /* DailyQuestListView.swift */; };
 		0403391A2F5419630045FA35 /* MainQuestCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339192F5419630045FA35 /* MainQuestCardView.swift */; };
 		0403391C2F5419A10045FA35 /* BottomActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403391B2F5419A10045FA35 /* BottomActionView.swift */; };
+		0403391E2F5576E90045FA35 /* QuestDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403391D2F5576E90045FA35 /* QuestDetailView.swift */; };
 		04117B932F52ED18000CDAED /* LifeQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117B922F52ED18000CDAED /* LifeQuestApp.swift */; };
 		04117B952F52ED18000CDAED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117B942F52ED18000CDAED /* ContentView.swift */; };
 		04117B972F52ED1A000CDAED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04117B962F52ED1A000CDAED /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		040339172F5418C90045FA35 /* DailyQuestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyQuestListView.swift; sourceTree = "<group>"; };
 		040339192F5419630045FA35 /* MainQuestCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQuestCardView.swift; sourceTree = "<group>"; };
 		0403391B2F5419A10045FA35 /* BottomActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomActionView.swift; sourceTree = "<group>"; };
+		0403391D2F5576E90045FA35 /* QuestDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDetailView.swift; sourceTree = "<group>"; };
 		04117B8F2F52ED18000CDAED /* LifeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04117B922F52ED18000CDAED /* LifeQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeQuestApp.swift; sourceTree = "<group>"; };
 		04117B942F52ED18000CDAED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				040339132F54178C0045FA35 /* StatusBarView.swift */,
 				040339152F5418720045FA35 /* BannerView.swift */,
 				040339172F5418C90045FA35 /* DailyQuestListView.swift */,
+				0403391D2F5576E90045FA35 /* QuestDetailView.swift */,
 				040339192F5419630045FA35 /* MainQuestCardView.swift */,
 				0403391B2F5419A10045FA35 /* BottomActionView.swift */,
 				04117BBE2F52F229000CDAED /* QuestLogView.swift */,
@@ -302,6 +305,7 @@
 				0403391A2F5419630045FA35 /* MainQuestCardView.swift in Sources */,
 				040339102F5415AB0045FA35 /* Quest.swift in Sources */,
 				040339182F5418C90045FA35 /* DailyQuestListView.swift in Sources */,
+				0403391E2F5576E90045FA35 /* QuestDetailView.swift in Sources */,
 				04117BC32F52F4AA000CDAED /* ShopView.swift in Sources */,
 				04117BBF2F52F229000CDAED /* QuestLogView.swift in Sources */,
 				040339122F5415C80045FA35 /* GameViewModel.swift in Sources */,

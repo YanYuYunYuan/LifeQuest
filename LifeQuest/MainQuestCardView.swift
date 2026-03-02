@@ -9,8 +9,10 @@ import SwiftUI
 
 struct MainQuestCardView: View {
     let quest: Quest
+    @ObservedObject var viewModel: GameViewModel  // 用于传递给详情页
     
     var body: some View {
+        NavigationLink(destination: QuestDetailView(quest: quest, viewModel: viewModel)) {
         VStack(alignment: .leading, spacing: 12) {
             Text("主线任务")
                 .font(.title2)
@@ -43,6 +45,7 @@ struct MainQuestCardView: View {
             // 进度条
             ProgressView(value: 0.5)
                 .progressViewStyle(LinearProgressViewStyle(tint: .purple))
+            }
         }
         .padding()
         .background(Color(.secondarySystemBackground))

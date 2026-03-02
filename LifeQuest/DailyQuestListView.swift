@@ -9,6 +9,7 @@ import SwiftUI
 struct DailyQuestListView: View {
     let quests: [Quest]
     let onComplete: (Quest) -> Void
+    let viewModel: GameViewModel  // 新增
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -17,7 +18,7 @@ struct DailyQuestListView: View {
                 .bold()
             
             ForEach(quests) { quest in
-                DailyQuestRow(quest: quest, onComplete: onComplete)
+                DailyQuestRow(quest: quest, onComplete: onComplete , viewModel: viewModel)
             }
         }
     }
@@ -25,9 +26,11 @@ struct DailyQuestListView: View {
 struct DailyQuestRow: View {
     let quest: Quest
     let onComplete: (Quest) -> Void
+    @ObservedObject var viewModel: GameViewModel  // 用于传递给详情页
     
     var body: some View {
-        HStack {
+        NavigationLink(destination: QuestDetailView(quest: quest, viewModel: viewModel)) {
+                HStack {
             // 图标
             Image(systemName: quest.icon)
                 .font(.title2)
@@ -62,8 +65,10 @@ struct DailyQuestRow: View {
                     .font(.title2)
                     .foregroundColor(quest.isCompleted ? .green : .gray)
             }
-            .disabled(quest.isCompleted)
+                .disabled(quest.isCompleted)
+            }
         }
+        .buttonStyle(PlainButtonStyle())  // 防止 NavigationLink 的默认样式干扰
         .padding()
         .background(Color(.secondarySystemBackground))
         .cornerRadius(12)
