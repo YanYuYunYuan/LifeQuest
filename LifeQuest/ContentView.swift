@@ -15,34 +15,35 @@ struct ContentView: View {
 }
 struct MainTabView: View {
     @State private var selectedTab = 0  // 默认选中首页
+    @ObservedObject var viewModel: GameViewModel  // 接收
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            HomeView()
+            HomeView(vm:viewModel )
                 .tabItem {
                     Label("首页", systemImage: "house.fill")
                 }
                 .tag(0)
             
-            QuestLogView()
+            QuestLogView(viewModel:viewModel )
                 .tabItem {
                     Label("任务", systemImage: "checklist")
                 }
                 .tag(1)
             
-            ProfileView()
+            ProfileView(viewModel:viewModel )
                 .tabItem {
                     Label("角色", systemImage: "person.fill")
                 }
                 .tag(2)
             
-            ShopView()
+            ShopView(viewModel:viewModel )
                 .tabItem {
                     Label("商店", systemImage: "cart.fill")
                 }
                 .tag(3)
             
-            SocialView()
+            SocialView(viewModel:viewModel )
                 .tabItem {
                     Label("公会", systemImage: "person.3.fill")
                 }

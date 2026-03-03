@@ -27,3 +27,13 @@ struct Quest: Identifiable {
     var icon: String          // SF Symbol 名称
     var progress: Double? = nil   // 仅主线任务使用，0.0~1.0
 }
+
+
+struct Achievement: Identifiable {
+    let id = UUID()
+    var name: String
+    var description: String
+    var icon: String
+    var isUnlocked: Bool
+    var progress: Double?  // 可选，用于进度型成就（0-1）
+}

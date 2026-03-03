@@ -9,7 +9,7 @@ import SwiftUI
 struct DailyQuestListView: View {
     let quests: [Quest]
     let onComplete: (Quest) -> Void
-    let viewModel: GameViewModel  // 新增
+    @ObservedObject var viewModel: GameViewModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ShopView: View {
+    @ObservedObject var viewModel: GameViewModel
     var body: some View {
         NavigationView {
                     Text("商店页面")
@@ -16,8 +17,3 @@ struct ShopView: View {
     }
 }
 
-struct ShopView_Previews: PreviewProvider {
-    static var previews: some View {
-        ShopView()
-    }
-}

@@ -26,7 +26,31 @@ class GameViewModel: ObservableObject {
         name: "减肥5kg", description: "当前进度: 2.5kg", type: .main,
         coinReward: 50, expReward: 100, icon: "scalemass.fill"
     )
-    
+    // 成就列表
+    @Published var achievements: [Achievement] = [
+            Achievement(name: "早起鸟儿", description: "连续7天在7点前起床", icon: "sunrise.fill", isUnlocked: true),
+            Achievement(name: "读书破万卷", description: "累计阅读10本书", icon: "books.vertical.fill", isUnlocked: false, progress: 0.6),
+            Achievement(name: "钢铁之躯", description: "累计运动100次", icon: "bicycle", isUnlocked: true),
+            Achievement(name: "理性消费者", description: "连续2周未兑换娱乐奖励", icon: "cart.badge.minus", isUnlocked: false),
+            Achievement(name: "幸运星", description: "连续3次抽到好运卡", icon: "star.circle.fill", isUnlocked: true),
+            Achievement(name: "不死鸟", description: "10次在中断后次日恢复", icon: "flame.fill", isUnlocked: false, progress: 0.3)
+        ]
+        
+        // 计算统计属性
+        var totalCompletedQuests: Int {
+            // 假设我们记录完成任务数，这里简单返回示例值
+            return 127
+        }
+        
+        var longestStreak: Int {
+            // 最长连续天数
+            return 21
+        }
+        
+        var weeklyCoins: Int {
+            // 本周获得金币
+            return 350
+        }
     // 完成任务（通过 ID）
         func completeQuest(byId id: UUID) -> Bool {
             // 先在日常任务中查找

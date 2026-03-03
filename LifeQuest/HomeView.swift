@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject private var vm = GameViewModel()
+    @ObservedObject var vm: GameViewModel
     @State private var showingRecovery = false
     
     var body: some View {

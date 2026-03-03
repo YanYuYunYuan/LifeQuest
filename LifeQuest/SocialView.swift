@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SocialView: View {
+    @ObservedObject var viewModel: GameViewModel
     var body: some View {
         NavigationView {
                     Text("公会页面")
@@ -16,8 +17,3 @@ struct SocialView: View {
     }
 }
 
-struct SocialView_Previews: PreviewProvider {
-    static var previews: some View {
-        SocialView()
-    }
-}
