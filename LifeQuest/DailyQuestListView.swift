@@ -51,7 +51,7 @@ struct DailyQuestRow: View {
                     
                     Spacer()
                     
-                    Label("\(quest.coinReward)", systemImage: "coins")
+                    Label("\(quest.coinReward)", systemImage: "dollarsign.circle")
                         .font(.caption)
                         .foregroundColor(.yellow)
                 }

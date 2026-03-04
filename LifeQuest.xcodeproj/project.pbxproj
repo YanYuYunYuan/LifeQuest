@@ -20,6 +20,15 @@
 		040339582F56F8840045FA35 /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339572F56F8840045FA35 /* StatCard.swift */; };
 		0403395A2F56F8A40045FA35 /* AchievementGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339592F56F8A40045FA35 /* AchievementGridItem.swift */; };
 		0403395C2F56F8C60045FA35 /* NextLevelRewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403395B2F56F8C60045FA35 /* NextLevelRewardView.swift */; };
+		0403395E2F5818A90045FA35 /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403395D2F5818A90045FA35 /* ShopItem.swift */; };
+		040339602F5819780045FA35 /* CoinShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403395F2F5819780045FA35 /* CoinShopView.swift */; };
+		040339622F5819A30045FA35 /* GemShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339612F5819A30045FA35 /* GemShopView.swift */; };
+		040339642F5819CB0045FA35 /* ShopItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339632F5819CB0045FA35 /* ShopItemCard.swift */; };
+		040339662F5819E90045FA35 /* SpecialOfferCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339652F5819E90045FA35 /* SpecialOfferCard.swift */; };
+		040339682F581C0A0045FA35 /* SocialModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339672F581C0A0045FA35 /* SocialModels.swift */; };
+		0403396A2F581C6B0045FA35 /* FriendsActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040339692F581C6B0045FA35 /* FriendsActivityView.swift */; };
+		0403396C2F581D220045FA35 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403396B2F581D220045FA35 /* LeaderboardView.swift */; };
+		0403396E2F581D3B0045FA35 /* TeamChallengesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403396D2F581D3B0045FA35 /* TeamChallengesView.swift */; };
 		04117B932F52ED18000CDAED /* LifeQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117B922F52ED18000CDAED /* LifeQuestApp.swift */; };
 		04117B952F52ED18000CDAED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04117B942F52ED18000CDAED /* ContentView.swift */; };
 		04117B972F52ED1A000CDAED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04117B962F52ED1A000CDAED /* Assets.xcassets */; };
@@ -65,6 +74,15 @@
 		040339572F56F8840045FA35 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
 		040339592F56F8A40045FA35 /* AchievementGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementGridItem.swift; sourceTree = "<group>"; };
 		0403395B2F56F8C60045FA35 /* NextLevelRewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLevelRewardView.swift; sourceTree = "<group>"; };
+		0403395D2F5818A90045FA35 /* ShopItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItem.swift; sourceTree = "<group>"; };
+		0403395F2F5819780045FA35 /* CoinShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinShopView.swift; sourceTree = "<group>"; };
+		040339612F5819A30045FA35 /* GemShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemShopView.swift; sourceTree = "<group>"; };
+		040339632F5819CB0045FA35 /* ShopItemCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemCard.swift; sourceTree = "<group>"; };
+		040339652F5819E90045FA35 /* SpecialOfferCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialOfferCard.swift; sourceTree = "<group>"; };
+		040339672F581C0A0045FA35 /* SocialModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialModels.swift; sourceTree = "<group>"; };
+		040339692F581C6B0045FA35 /* FriendsActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsActivityView.swift; sourceTree = "<group>"; };
+		0403396B2F581D220045FA35 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		0403396D2F581D3B0045FA35 /* TeamChallengesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamChallengesView.swift; sourceTree = "<group>"; };
 		04117B8F2F52ED18000CDAED /* LifeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04117B922F52ED18000CDAED /* LifeQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeQuestApp.swift; sourceTree = "<group>"; };
 		04117B942F52ED18000CDAED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,10 +163,19 @@
 				040339592F56F8A40045FA35 /* AchievementGridItem.swift */,
 				0403395B2F56F8C60045FA35 /* NextLevelRewardView.swift */,
 				04117BC22F52F4AA000CDAED /* ShopView.swift */,
+				0403395F2F5819780045FA35 /* CoinShopView.swift */,
+				040339612F5819A30045FA35 /* GemShopView.swift */,
+				040339632F5819CB0045FA35 /* ShopItemCard.swift */,
+				040339652F5819E90045FA35 /* SpecialOfferCard.swift */,
 				04117BC42F52F4CC000CDAED /* SocialView.swift */,
+				040339692F581C6B0045FA35 /* FriendsActivityView.swift */,
+				0403396B2F581D220045FA35 /* LeaderboardView.swift */,
+				0403396D2F581D3B0045FA35 /* TeamChallengesView.swift */,
 				040339092F52F5640045FA35 /* MainTabView.swift */,
 				0403390D2F5415920045FA35 /* User.swift */,
 				0403390F2F5415AB0045FA35 /* Quest.swift */,
+				0403395D2F5818A90045FA35 /* ShopItem.swift */,
+				040339672F581C0A0045FA35 /* SocialModels.swift */,
 				040339112F5415C80045FA35 /* GameViewModel.swift */,
 				04117B962F52ED1A000CDAED /* Assets.xcassets */,
 				04117B982F52ED1A000CDAED /* Preview Content */,
@@ -311,8 +338,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040339642F5819CB0045FA35 /* ShopItemCard.swift in Sources */,
+				040339662F5819E90045FA35 /* SpecialOfferCard.swift in Sources */,
 				0403391A2F5419630045FA35 /* MainQuestCardView.swift in Sources */,
+				040339602F5819780045FA35 /* CoinShopView.swift in Sources */,
 				040339102F5415AB0045FA35 /* Quest.swift in Sources */,
+				0403395E2F5818A90045FA35 /* ShopItem.swift in Sources */,
+				0403396E2F581D3B0045FA35 /* TeamChallengesView.swift in Sources */,
+				0403396A2F581C6B0045FA35 /* FriendsActivityView.swift in Sources */,
 				040339182F5418C90045FA35 /* DailyQuestListView.swift in Sources */,
 				0403391E2F5576E90045FA35 /* QuestDetailView.swift in Sources */,
 				04117BC32F52F4AA000CDAED /* ShopView.swift in Sources */,
@@ -327,9 +360,12 @@
 				0403390E2F5415920045FA35 /* User.swift in Sources */,
 				04117B952F52ED18000CDAED /* ContentView.swift in Sources */,
 				0403395C2F56F8C60045FA35 /* NextLevelRewardView.swift in Sources */,
+				040339622F5819A30045FA35 /* GemShopView.swift in Sources */,
 				04117B932F52ED18000CDAED /* LifeQuestApp.swift in Sources */,
 				040339162F5418720045FA35 /* BannerView.swift in Sources */,
+				0403396C2F581D220045FA35 /* LeaderboardView.swift in Sources */,
 				04117BC52F52F4CC000CDAED /* SocialView.swift in Sources */,
+				040339682F581C0A0045FA35 /* SocialModels.swift in Sources */,
 				0403391C2F5419A10045FA35 /* BottomActionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

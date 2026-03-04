@@ -35,7 +35,7 @@ struct MainQuestCardView: View {
                 
                 // 奖励预览
                 VStack(alignment: .trailing) {
-                    Label("\(quest.coinReward)", systemImage: "coins")
+                    Label("\(quest.coinReward)", systemImage: "dollarsign.circle")
                         .font(.caption)
                     Label("\(quest.expReward) EXP", systemImage: "star")
                         .font(.caption)

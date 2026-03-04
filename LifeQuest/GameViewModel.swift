@@ -10,6 +10,7 @@ import UIKit
 import Combine
 
 class GameViewModel: ObservableObject {
+    
     @Published var user = User()
     @Published var dailyQuests: [Quest] = [
         Quest(name: "晨间冥想", description: "冥想10分钟", type: .daily,
@@ -21,6 +22,11 @@ class GameViewModel: ObservableObject {
         Quest(name: "喝8杯水", description: "保持水分", type: .daily,
               coinReward: 5, expReward: 5, icon: "drop.fill")
     ]
+    @Published var weeklyQuests: [Quest] = [
+         Quest(name: "整理房间", description: "整理房间", type: .weekly, coinReward: 30, expReward: 30, currentStreak: 0, icon: "house.fill"),
+         Quest(name: "长跑一次", description: "长跑一次", type: .weekly, coinReward: 40, expReward: 40, currentStreak: 0, icon: "figure.walk"),
+         Quest(name: "学习新技能", description: "学习2小时", type: .weekly, coinReward: 35, expReward: 35, currentStreak: 0, icon: "book.closed.fill")
+     ]
     
     @Published var mainQuest: Quest = Quest(
         name: "减肥5kg", description: "当前进度: 2.5kg", type: .main,
@@ -51,6 +57,20 @@ class GameViewModel: ObservableObject {
             // 本周获得金币
             return 350
         }
+    // 获取所有任务（用于日志页面）
+    var allQuests: [Quest] {
+        dailyQuests + weeklyQuests + [mainQuest]
+    }
+    
+    // 根据类型筛选任务
+    func quests(of type: QuestType?) -> [Quest] {
+        guard let type = type else { return allQuests }
+        switch type {
+        case .daily: return dailyQuests
+        case .weekly: return weeklyQuests
+        case .main: return [mainQuest]
+        }
+    }
     // 完成任务（通过 ID）
         func completeQuest(byId id: UUID) -> Bool {
             // 先在日常任务中查找
@@ -60,6 +80,16 @@ class GameViewModel: ObservableObject {
                 user.coins += dailyQuests[index].coinReward
                 user.exp += dailyQuests[index].expReward
                 dailyQuests[index].currentStreak += 1   // 简化处理，实际可判断是否连续
+                checkLevelUp()
+                return true
+            }
+            // 周常
+            if let index = weeklyQuests.firstIndex(where: { $0.id == id }) {
+                guard !weeklyQuests[index].isCompleted else { return false }
+                weeklyQuests[index].isCompleted = true
+                user.coins += weeklyQuests[index].coinReward
+                user.exp += weeklyQuests[index].expReward
+                weeklyQuests[index].currentStreak += 1
                 checkLevelUp()
                 return true
             }
@@ -122,5 +152,76 @@ class GameViewModel: ObservableObject {
         guard user.hearts < user.maxHearts && user.coins >= 50 else { return }
         user.coins -= 50
         user.hearts += 1
+    }
+}
+
+// ViewModels/GameViewModel.swift（扩展部分）
+import SwiftUI
+
+extension GameViewModel {
+    // 金币商店商品
+    var coinShopItems: [ShopItem] {
+        [
+            ShopItem(name: "看一集剧", description: "放松一下", icon: "tv", price: 30, currency: .coins, type: .entertainment),
+            ShopItem(name: "喝奶茶", description: "奖励自己", icon: "cup.and.saucer.fill", price: 50, currency: .coins, type: .entertainment),
+            ShopItem(name: "游戏1小时", description: "尽情娱乐", icon: "gamecontroller.fill", price: 40, currency: .coins, type: .entertainment),
+            ShopItem(name: "生命药水", description: "恢复一颗心", icon: "heart.fill", price: 50, currency: .coins, type: .recovery),
+            ShopItem(name: "双倍经验卡", description: "24小时双倍经验", icon: "bolt.fill", price: 60, currency: .coins, type: .boost)
+        ]
+    }
+    
+    // 钻石商店商品
+    var gemShopItems: [ShopItem] {
+        [
+            ShopItem(name: "买衣服", description: "给自己添置新衣", icon: "tshirt.fill", price: 2, currency: .gems, type: .entertainment),
+            ShopItem(name: "吃大餐", description: "美食奖励", icon: "fork.knife", price: 3, currency: .gems, type: .entertainment),
+            ShopItem(name: "短途旅行", description: "周末放松", icon: "car.fill", price: 5, currency: .gems, type: .entertainment)
+        ]
+    }
+    
+    // 限时特惠商品（可动态更新，此处为示例）
+    var specialOfferItems: [ShopItem] {
+        [
+            ShopItem(name: "双倍经验卡", description: "限时8折", icon: "bolt.circle", price: 48, currency: .coins, type: .boost),
+            ShopItem(name: "生命礼包", description: "恢复两颗心", icon: "heart.circle.fill", price: 90, currency: .coins, type: .recovery)
+        ]
+    }
+    
+    // 购买商品
+    func purchase(item: ShopItem) -> Bool {
+        // 检查余额
+        switch item.currency {
+        case .coins:
+            guard user.coins >= item.price else { return false }
+            user.coins -= item.price
+        case .gems:
+            guard user.gems >= item.price else { return false }
+            user.gems -= item.price
+        }
+        
+        // 根据商品类型触发特殊效果
+        switch item.type {
+        case .recovery:
+            if user.hearts < user.maxHearts {
+                user.hearts += 1
+            }
+        case .boost:
+            activateBoost()
+        case .entertainment:
+            // 纯娱乐，无需额外操作
+            break
+        }
+        
+        // 触感反馈
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
+        
+        return true
+    }
+    
+    private func activateBoost() {
+        // 实际项目中可设置双倍经验过期时间，这里用 UserDefaults 简单存储
+        let expiryDate = Date().addingTimeInterval(24 * 60 * 60) // 24小时
+        UserDefaults.standard.set(expiryDate.timeIntervalSince1970, forKey: "boostExpiry")
     }
 }

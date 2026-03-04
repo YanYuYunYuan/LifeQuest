@@ -43,7 +43,7 @@ struct MainTabView: View {
                 }
                 .tag(3)
             
-            SocialView(viewModel:viewModel )
+            SocialView(gameViewModel:viewModel )
                 .tabItem {
                     Label("公会", systemImage: "person.3.fill")
                 }
