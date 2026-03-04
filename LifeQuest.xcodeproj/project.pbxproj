@@ -125,6 +125,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0403396F2F5827870045FA35 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0403390D2F5415920045FA35 /* User.swift */,
+				0403390F2F5415AB0045FA35 /* Quest.swift */,
+				0403395D2F5818A90045FA35 /* ShopItem.swift */,
+				040339672F581C0A0045FA35 /* SocialModels.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		040339702F5827B50045FA35 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				040339112F5415C80045FA35 /* GameViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		040339712F5827D70045FA35 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04117BBC2F52F0EE000CDAED /* HomeView.swift */,
+				040339132F54178C0045FA35 /* StatusBarView.swift */,
+				040339152F5418720045FA35 /* BannerView.swift */,
+				0403391B2F5419A10045FA35 /* BottomActionView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		040339722F5827FF0045FA35 /* Quest */ = {
+			isa = PBXGroup;
+			children = (
+				04117BBE2F52F229000CDAED /* QuestLogView.swift */,
+				0403391D2F5576E90045FA35 /* QuestDetailView.swift */,
+				040339192F5419630045FA35 /* MainQuestCardView.swift */,
+				040339172F5418C90045FA35 /* DailyQuestListView.swift */,
+			);
+			path = Quest;
+			sourceTree = "<group>";
+		};
+		040339732F5828520045FA35 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				040339572F56F8840045FA35 /* StatCard.swift */,
+				040339592F56F8A40045FA35 /* AchievementGridItem.swift */,
+				0403395B2F56F8C60045FA35 /* NextLevelRewardView.swift */,
+				04117BC02F52F46E000CDAED /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		040339742F5828B10045FA35 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				0403395F2F5819780045FA35 /* CoinShopView.swift */,
+				040339612F5819A30045FA35 /* GemShopView.swift */,
+				040339632F5819CB0045FA35 /* ShopItemCard.swift */,
+				040339652F5819E90045FA35 /* SpecialOfferCard.swift */,
+				04117BC22F52F4AA000CDAED /* ShopView.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		040339752F5828D90045FA35 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				040339692F581C6B0045FA35 /* FriendsActivityView.swift */,
+				0403396B2F581D220045FA35 /* LeaderboardView.swift */,
+				0403396D2F581D3B0045FA35 /* TeamChallengesView.swift */,
+				04117BC42F52F4CC000CDAED /* SocialView.swift */,
+			);
+			path = Social;
+			sourceTree = "<group>";
+		};
 		04117B862F52ED18000CDAED = {
 			isa = PBXGroup;
 			children = (
@@ -150,33 +225,14 @@
 			children = (
 				04117B922F52ED18000CDAED /* LifeQuestApp.swift */,
 				04117B942F52ED18000CDAED /* ContentView.swift */,
-				04117BBC2F52F0EE000CDAED /* HomeView.swift */,
-				040339132F54178C0045FA35 /* StatusBarView.swift */,
-				040339152F5418720045FA35 /* BannerView.swift */,
-				040339172F5418C90045FA35 /* DailyQuestListView.swift */,
-				0403391D2F5576E90045FA35 /* QuestDetailView.swift */,
-				040339192F5419630045FA35 /* MainQuestCardView.swift */,
-				0403391B2F5419A10045FA35 /* BottomActionView.swift */,
-				04117BBE2F52F229000CDAED /* QuestLogView.swift */,
-				04117BC02F52F46E000CDAED /* ProfileView.swift */,
-				040339572F56F8840045FA35 /* StatCard.swift */,
-				040339592F56F8A40045FA35 /* AchievementGridItem.swift */,
-				0403395B2F56F8C60045FA35 /* NextLevelRewardView.swift */,
-				04117BC22F52F4AA000CDAED /* ShopView.swift */,
-				0403395F2F5819780045FA35 /* CoinShopView.swift */,
-				040339612F5819A30045FA35 /* GemShopView.swift */,
-				040339632F5819CB0045FA35 /* ShopItemCard.swift */,
-				040339652F5819E90045FA35 /* SpecialOfferCard.swift */,
-				04117BC42F52F4CC000CDAED /* SocialView.swift */,
-				040339692F581C6B0045FA35 /* FriendsActivityView.swift */,
-				0403396B2F581D220045FA35 /* LeaderboardView.swift */,
-				0403396D2F581D3B0045FA35 /* TeamChallengesView.swift */,
+				040339712F5827D70045FA35 /* Home */,
+				040339722F5827FF0045FA35 /* Quest */,
+				040339732F5828520045FA35 /* Profile */,
+				040339742F5828B10045FA35 /* Shop */,
+				040339752F5828D90045FA35 /* Social */,
 				040339092F52F5640045FA35 /* MainTabView.swift */,
-				0403390D2F5415920045FA35 /* User.swift */,
-				0403390F2F5415AB0045FA35 /* Quest.swift */,
-				0403395D2F5818A90045FA35 /* ShopItem.swift */,
-				040339672F581C0A0045FA35 /* SocialModels.swift */,
-				040339112F5415C80045FA35 /* GameViewModel.swift */,
+				0403396F2F5827870045FA35 /* model */,
+				040339702F5827B50045FA35 /* viewModel */,
 				04117B962F52ED1A000CDAED /* Assets.xcassets */,
 				04117B982F52ED1A000CDAED /* Preview Content */,
 			);
